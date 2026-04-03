@@ -1,23 +1,126 @@
 <!doctype html>
-<html lang="en">
+<html lang="ka">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>m travel</title>
+    <title>M Travel</title>
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <header></header>
+    <header class="header">
+      <div class="header-content">
+        <a href="#" class="brand">M Travel</a>
+
+        <nav class="main-nav">
+          <a href="#">მთავარი</a>
+          <a href="#">მიმართულებები</a>
+          <a href="#">ტურები</a>
+          <a href="#">კონტაქტი</a>
+        </nav>
+      </div>
+    </header>
+
     <main>
       <section class="hero">
-        <h1>იაფი ავიაბილეთები</h1>
-        <h2>სანდო ტურისტული კომპანია</h2>
-        <div class="hero-buttons">
-          <button>ვოცაპი</button>
-          <button>ვაიბერი</button>
+        <div class="hero-grid">
+          <div class="hero-content">
+            <span class="hero-label">ავიაბილეთები • ტურები • მხარდაჭერა</span>
+
+            <h1>იაფი ავიაბილეთები</h1>
+            <h2>სანდო ტურისტული კომპანია</h2>
+
+            <div class="hero-buttons">
+              <a href="#" class="btn btn-primary">ვოცაპი</a>
+              <a href="#" class="btn btn-secondary">ვაიბერი</a>
+            </div>
+          </div>
+
+          <div class="hero-panel">
+            <div class="info-item">
+              <h3>20 000</h3>
+              <p>კმაყოფილი მომხმარებელი</p>
+            </div>
+
+            <div class="info-item">
+              <h3>10</h3>
+              <p>წლიანი გამოცდილება</p>
+            </div>
+
+            <div class="info-item">
+              <h3>700</h3>
+              <p>სხვადასხვა მიმართულება</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="airlines">
+        <div class="airline-logos">
+          <img src="./images/Air_Astana_logo.svg.png" alt="Air Astana" />
+          <img src="./images/Air_China-Logo.wine.png" alt="Air China" />
+          <img src="./images/EasyJet_logo.svg.png" alt="EasyJet" />
+          <img src="./images/Logo_Vueling.svg.png" alt="Vueling" />
+          <img src="./images/Wizz_Air_Logo.png" alt="Wizz Air" />
+          <img src="./images/Lufthansa_Logo_2018.svg.png" alt="Lufthansa" />
+          <img src="./images/Volotea.svg.png" alt="Volotea" />
+          <img
+            src="./images/Turkish_Airlines_logo_(2010-2017).svg.png"
+            alt="Turkish Airlines"
+          />
+        </div>
+      </section>
+
+      <section class="routes">
+        <h2>მიმართულებები</h2>
+        <div class="routes-grid">
+          <div class="route-card">
+            <img
+              src="./images/alfiano-sutianto-exFdOWkYBQw-unsplash.jpg"
+              alt="Rome"
+            />
+            <h3>რომი</h3>
+            <a href="#" class="btn btn-primary">დეტალურად</a>
+          </div>
+
+          <div class="route-card">
+            <img
+              src="./images/candace-smith-wOHxl-QpcCs-unsplash.jpg"
+              alt="Paris"
+            />
+            <h3>პარიზი</h3>
+            <a href="#" class="btn btn-primary">დეტალურად</a>
+          </div>
+
+          <div class="route-card">
+            <img
+              src="./images/felfin-felfin-5MV818tzxeo-unsplash.jpg"
+              alt="Rome"
+            />
+            <h3>რომი</h3>
+            <a href="#" class="btn btn-primary">დეტალურად</a>
+          </div>
+
+          <div class="route-card">
+            <img
+              src="./images/katarzyna-zygnerska-Y0UUhY1V7Po-unsplash.jpg"
+              alt="Paris"
+            />
+            <h3>პარიზი</h3>
+            <a href="#" class="btn btn-primary">დეტალურად</a>
+          </div>
+        </div>
+
+        <div class="read-more">
+          <button class="btn btn-secondary">ყველა მიმართულება</button>
         </div>
       </section>
     </main>
-    <footer></footer>
+
+    <footer class="site-footer">
+      <div class="footer-content">
+        <p>M Travel</p>
+        <p>ტურისტული მომსახურება • ავიაბილეთები • მხარდაჭერა</p>
+      </div>
+    </footer>
   </body>
 </html>
