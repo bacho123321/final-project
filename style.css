@@ -1,3 +1,8 @@
+@font-face {
+  font-family: "bpg_nino_mtavruli_bold";
+  src: url("fonts/bpg_nino_mtavruli_bold.ttf") format("truetype");
+}
+
 :root {
   --bg: #f5f1e8;
   --surface: #ffffff;
@@ -17,6 +22,12 @@ body {
   background: var(--bg);
   color: var(--title);
   padding: 14px;
+}
+
+h1,
+h2,
+h3 {
+  font-family: "bpg_nino_mtavruli_bold", Arial, sans-serif;
 }
 
 a {
@@ -65,6 +76,8 @@ a {
 .main-nav a:hover {
   color: var(--accent);
 }
+
+/* ჰირო სექცია */
 
 .hero {
   margin-bottom: 18px;
@@ -285,6 +298,52 @@ h3 {
   margin-top: 20px;
 }
 
+/* რეკლამა */
+.ads {
+  background: url(./images/alfiano-sutianto-exFdOWkYBQw-unsplash.jpg)
+    center/cover no-repeat;
+  max-width: 90%;
+  height: 240px;
+  margin: 0 auto 18px;
+  padding: 18px 24px;
+  border: 1px solid #ddd;
+  border-radius: var(--radius);
+  position: relative; /* დამატება */
+  overflow: hidden;   /* დამატება */
+}
+
+.ads::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    to right,
+    var(--accent) 0%,
+    var(--accent) 25%,
+    transparent 90%
+  );
+  border-radius: var(--radius);
+}
+
+.ad-card {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  height: 100%;
+  gap: 20px;
+  flex-wrap: nowrap;
+  position: relative;
+  z-index: 1;
+}
+
+.ad-card h2{
+  color: var(--surface);
+}
+
+.ad-card p {
+  color: var(--surface);
+}
 /* ტურები */
 .tours {
   max-width: 90%;
@@ -407,6 +466,77 @@ h3 {
   background: var(--surface);
   border: 1px solid #ddd;
   border-radius: var(--radius);
+}
+
+.contact h2 {
+  text-align: center;
+  margin: 10px 0 20px;
+}
+
+.contact-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 24px;
+}
+
+.contact-info {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.contact-item {
+  padding: 16px;
+  background: #f2eee6;
+  border: 1px solid #ddd;
+  border-radius: var(--radius);
+}
+
+.contact-item:hover {
+  border-color: #cfcfcf;
+}
+.contact-item h3 {
+  font-size: 18px;
+  color: var(--accent);
+  padding-bottom: 8px;
+}
+.contact-item p {
+  font-size: 14px;
+  color: #666;
+}
+
+.contact-form {
+  padding: 16px;
+  background: #f2eee6;
+  border: 1px solid #ddd;
+  border-radius: var(--radius);
+}
+
+.contact-form:hover {
+  border-color: #cfcfcf;
+}
+
+.contact-form h3 {
+  font-size: 18px;
+  margin-bottom: 12px;
+  color: var(--accent);
+}
+
+.contact-form form {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+.contact-form input,
+.contact-form textarea {
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: var(--radius);
+}
+.contact-form input:focus,
+.contact-form textarea:focus {
+  border-color: var(--accent);
+  outline: none;
 }
 
 /* ფუტერი */
