@@ -309,7 +309,7 @@ h3 {
   border: 1px solid #ddd;
   border-radius: var(--radius);
   position: relative; /* დამატება */
-  overflow: hidden;   /* დამატება */
+  overflow: hidden; /* დამატება */
 }
 
 .ads::before {
@@ -337,7 +337,7 @@ h3 {
   z-index: 1;
 }
 
-.ad-card h2{
+.ad-card h2 {
   color: var(--surface);
 }
 
@@ -540,34 +540,34 @@ h3 {
 }
 
 .social-links {
-    display: flex;
-    margin-top: 20px;
-    gap: 10px;
-    justify-content: space-around;
-    flex-direction: column;
-    flex-wrap: nowrap;
-    align-items: center;
+  display: flex;
+  margin-top: 20px;
+  gap: 10px;
+  justify-content: space-around;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  align-items: center;
 }
 
 .social-icons {
-    display: flex;
-    gap: 40px;
+  display: flex;
+  gap: 40px;
 }
 
 .social-icons a img {
-    width: 40px;
-    height: 40px;
-    object-fit: contain;
-    background: #f2eee6;
-    border: 1px solid #ddd;
-    border-radius: var(--radius);
-    padding: 8px;
+  width: 40px;
+  height: 40px;
+  object-fit: contain;
+  background: #f2eee6;
+  border: 1px solid #ddd;
+  border-radius: var(--radius);
+  padding: 8px;
 }
-
 
 /* routes.html */
 
-h1, h2 {
+h1,
+h2 {
   text-align: center;
   margin: 10px 0 20px;
 }
@@ -602,22 +602,82 @@ h1, h2 {
   border-radius: var(--radius);
 }
 
+.panigation {
+  display: flex;
+  gap: 12px;
+  justify-content: center;
+  margin-bottom: 20px;
+}
 
+.panigation {
+  display: flex;
+  gap: 12px;
+  justify-content: center;
+  margin: 20px;
+}
 
+.panigation p {
+  padding: 10px;
+  border-radius: var(--radius);
+  background: #f2eee6;
+  border: 1px solid #ddd;
+}
 
+.contact-hero {
+  background: var(--accent);
+  max-width: 90%;
+  height: 240px;
+  margin: 0 auto 20px;
+  padding: 18px 24px;
+  border: 1px solid #ddd;
+  border-radius: var(--radius);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
 
+.contact-hero h1 {
+  color: var(--surface);
+}
 
+.contact-hero p {
+  color: var(--surface);
+}
 
+.contact-info {
+  display: flex;
+  flex-direction: row;
+  max-width: 90%;
+  margin: 0 auto 80px;
+  padding: 18px 24px;
+  background: var(--surface);
+  border: 1px solid #ddd;
+  border-radius: var(--radius);
+  align-items: center;
+  justify-content: space-around;
+}
 
+.map {
+  width: 50%;
+  height: 300px;
+}
 
+iframe {
+  width: 100%;
+  height: 100%;
+  border: none;
+  border-radius: var(--radius);
+}
 
-
-
-
-
-
-
-
+.contact-details {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 50%;
+  height: 300px;
+  justify-content: space-between;
+}
 
 /* ფუტერი */
 
