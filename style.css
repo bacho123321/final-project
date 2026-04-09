@@ -55,10 +55,12 @@ a {
 .brand {
   font-size: 22px;
   font-weight: 700;
+  transition: all 0.3s ease;
 }
 
 .brand:hover {
   color: var(--accent);
+  transform: scale(1.05);
 }
 
 .main-nav {
@@ -71,6 +73,7 @@ a {
 .main-nav a {
   font-size: 14px;
   font-weight: 600;
+  transition: all 0.2s ease;
 }
 
 .main-nav a:hover {
@@ -120,6 +123,12 @@ a {
   border: 1px solid #ddd;
   border-radius: var(--radius);
   color: var(--accent);
+  transition: all 0.2s ease;
+}
+
+.hero-label:hover {
+  border-color: var(--accent);
+  background: #ffffff;
 }
 
 h1 {
@@ -157,6 +166,7 @@ h3 {
   font-size: 14px;
   font-weight: 700;
   border: 1px solid transparent;
+  transition: all 0.3s ease;
 }
 
 .btn-primary {
@@ -166,6 +176,7 @@ h3 {
 
 .btn-primary:hover {
   background: #183952;
+  box-shadow: 0 4px 12px rgba(31, 75, 115, 0.3);
 }
 
 .btn-secondary {
@@ -198,10 +209,12 @@ h3 {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  transition: all 0.3s ease;
 }
 
 .info-item:hover {
   border-color: #cfcfcf;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.1);
 }
 
 .info-item h3 {
@@ -232,7 +245,7 @@ h3 {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
-  flex-wrap: nowrap;
+  flex-wrap: wrap;
   align-items: center;
   gap: 20px;
 }
@@ -245,6 +258,12 @@ h3 {
   border: 1px solid #ddd;
   border-radius: var(--radius);
   padding: 8px;
+  transition: all 0.3s ease;
+}
+
+.airline-logos img:hover {
+  transform: scale(1.1);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 }
 
 /* მიმართულებები */
@@ -279,6 +298,12 @@ h3 {
   border: 1px solid #ddd;
   background-color: #f2eee6;
   border-radius: var(--radius);
+  transition: all 0.3s ease;
+}
+
+.route-card:hover {
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
+  border-color: var(--accent);
 }
 
 .route-card img {
@@ -288,6 +313,11 @@ h3 {
   border: 1px solid #ddd;
   border-radius: 50%;
   align-items: center;
+  transition: transform 0.3s ease;
+}
+
+.route-card:hover img {
+  transform: scale(1.05);
 }
 
 .route-card h3 {
@@ -311,6 +341,11 @@ h3 {
   border-radius: var(--radius);
   position: relative; /* დამატება */
   overflow: hidden; /* დამატება */
+  transition: all 0.3s ease;
+}
+
+.ads:hover {
+  box-shadow: 0 8px 24px rgba(31, 75, 115, 0.15);
 }
 
 .ads::before {
@@ -372,6 +407,12 @@ h3 {
   position: relative;
   border: 1px solid #ddd;
   border-radius: var(--radius);
+  transition: all 0.3s ease;
+}
+
+.tour-1:hover {
+  transform: scale(1.02);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.1);
 }
 
 .tour-1 img {
@@ -409,6 +450,15 @@ h3 {
   width: 100%;
   box-sizing: border-box;
   background-color: var(--bg);
+  transition: all 0.3s ease;
+}
+
+.tour-1 a:hover,
+.tour-2 a:hover,
+.tour-3 a:hover,
+.tour-4 a:hover,
+.tour-5 a:hover {
+  background-color: var(--accent);
 }
 
 .tour-1 a h3,
@@ -419,6 +469,15 @@ h3 {
   margin: 0;
   display: inline-block;
   color: var(--accent);
+  transition: color 0.3s ease;
+}
+
+.tour-1 a:hover h3,
+.tour-2 a:hover h3,
+.tour-3 a:hover h3,
+.tour-4 a:hover h3,
+.tour-5 a:hover h3 {
+  color: var(--surface);
 }
 
 .tour-2 {
@@ -428,6 +487,12 @@ h3 {
   position: relative;
   border: 1px solid #ddd;
   border-radius: var(--radius);
+  transition: all 0.3s ease;
+}
+
+.tour-2:hover {
+  transform: scale(1.02);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.1);
 }
 
 .tour-3 {
@@ -437,6 +502,12 @@ h3 {
   position: relative;
   border: 1px solid #ddd;
   border-radius: var(--radius);
+  transition: all 0.3s ease;
+}
+
+.tour-3:hover {
+  transform: scale(1.02);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.1);
 }
 
 .tour-4 {
@@ -447,6 +518,12 @@ h3 {
   position: relative;
   border: 1px solid #ddd;
   border-radius: var(--radius);
+  transition: all 0.3s ease;
+}
+
+.tour-4:hover {
+  transform: scale(1.02);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.1);
 }
 
 .tour-5 {
@@ -457,6 +534,12 @@ h3 {
   position: relative;
   border: 1px solid #ddd;
   border-radius: var(--radius);
+  transition: all 0.3s ease;
+}
+
+.tour-5:hover {
+  transform: scale(1.02);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.1);
 }
 
 /* კონტაქტი */
@@ -485,16 +568,21 @@ h3 {
   background: #f2eee6;
   border: 1px solid #ddd;
   border-radius: var(--radius);
+  margin: 5px auto;
+  transition: all 0.3s ease;
 }
 
 .contact-item:hover {
-  border-color: #cfcfcf;
+  border-color: var(--accent);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.08);
 }
+
 .contact-item h3 {
   font-size: 18px;
   color: var(--accent);
   padding-bottom: 8px;
 }
+
 .contact-item p {
   font-size: 14px;
   color: #666;
@@ -505,10 +593,12 @@ h3 {
   background: #f2eee6;
   border: 1px solid #ddd;
   border-radius: var(--radius);
+  transition: all 0.3s ease;
 }
 
 .contact-form:hover {
-  border-color: #cfcfcf;
+  border-color: var(--accent);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.08);
 }
 
 .contact-form h3 {
@@ -522,16 +612,20 @@ h3 {
   flex-direction: column;
   gap: 12px;
 }
+
 .contact-form input,
 .contact-form textarea {
   padding: 10px;
   border: 1px solid #ddd;
   border-radius: var(--radius);
+  transition: all 0.2s ease;
 }
+
 .contact-form input:focus,
 .contact-form textarea:focus {
   border-color: var(--accent);
   outline: none;
+  box-shadow: 0 0 0 3px rgba(31, 75, 115, 0.1);
 }
 
 .social-links {
@@ -557,6 +651,12 @@ h3 {
   border: 1px solid #ddd;
   border-radius: var(--radius);
   padding: 8px;
+  transition: all 0.3s ease;
+}
+
+.social-icons a img:hover {
+  transform: scale(1.2) rotate(5deg);
+  border-color: var(--accent);
 }
 
 /* routes.html */
@@ -578,6 +678,11 @@ h2 {
   display: flex;
   align-items: center;
   justify-content: center;
+  transition: all 0.3s ease;
+}
+
+.routes-hero:hover {
+  box-shadow: 0 8px 24px rgba(31, 75, 115, 0.2);
 }
 
 .routes-hero h1 {
@@ -616,6 +721,14 @@ h2 {
   border-radius: var(--radius);
   background: #f2eee6;
   border: 1px solid #ddd;
+  transition: all 0.2s ease;
+  cursor: pointer;
+}
+
+.panigation p:hover {
+  background: var(--accent);
+  color: var(--surface);
+  transform: scale(1.05);
 }
 
 .contact-hero {
@@ -630,6 +743,11 @@ h2 {
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  transition: all 0.3s ease;
+}
+
+.contact-hero:hover {
+  box-shadow: 0 8px 24px rgba(31, 75, 115, 0.2);
 }
 
 .contact-hero h1 {
@@ -640,20 +758,22 @@ h2 {
   color: var(--surface);
 }
 
-.contact-info {
-  display: flex;
-  flex-direction: column;
-  max-width: 100%;
+.contact-page-info {
+  max-width: 90%;
+  margin: 10px auto;
   padding: 18px 24px;
   background: var(--surface);
   border: 1px solid #ddd;
   border-radius: var(--radius);
+  display: flex;
+  justify-content: space-between;
+  gap: 16px;
+  flex-direction: column;
   align-items: stretch;
-  gap: 12px;
 }
 
 .map {
-  width: 50%;
+  width: 100%;
   height: 300px;
 }
 
@@ -681,10 +801,12 @@ iframe {
   align-items: center;
   justify-content: space-between;
   gap: 16px;
+  transition: all 0.3s ease;
 }
 
 .footer-content:hover {
-  border-color: #cfcfcf;
+  border-color: var(--accent);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
 }
 
 .footer-content p {
@@ -764,6 +886,7 @@ iframe {
 
   .info-item {
     height: 100px;
+    margin: 5px auto;
   }
 
   .contact-content {
@@ -777,3 +900,53 @@ iframe {
   }
 }
 
+@media (max-width: 425px) {
+  .main-nav {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .hero-label {
+    font-size: 10px;
+    padding: 6px 10px;
+    margin: 0 auto;
+  }
+
+  h1 {
+    text-align: center;
+  }
+
+  h2 {
+    text-align: center;
+  }
+
+  h3 {
+    text-align: center;
+  }
+
+  p {
+    text-align: center;
+  }
+
+  .routes-grid {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .tour-cards {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .footer-content {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .footer-info {
+    flex-direction: row;
+    gap: 8px;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+  }
+}
