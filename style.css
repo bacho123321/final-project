@@ -234,6 +234,7 @@ h3 {
   justify-content: space-around;
   flex-wrap: nowrap;
   align-items: center;
+  gap: 20px;
 }
 
 .airline-logos img {
@@ -479,12 +480,6 @@ h3 {
   gap: 24px;
 }
 
-.contact-info {
-  display: flex;
-  flex-direction: column;
-  gap: 16px;
-}
-
 .contact-item {
   padding: 16px;
   background: #f2eee6;
@@ -647,15 +642,14 @@ h2 {
 
 .contact-info {
   display: flex;
-  flex-direction: row;
-  max-width: 90%;
-  margin: 0 auto 80px;
+  flex-direction: column;
+  max-width: 100%;
   padding: 18px 24px;
   background: var(--surface);
   border: 1px solid #ddd;
   border-radius: var(--radius);
-  align-items: center;
-  justify-content: space-around;
+  align-items: stretch;
+  gap: 12px;
 }
 
 .map {
@@ -713,3 +707,82 @@ iframe {
   font-size: 14px;
   color: #666;
 }
+
+/* მობილური */
+@media (max-width: 1024px) {
+  .hero-grid {
+    flex-direction: row;
+  }
+
+  h1 {
+    font-size: 36px;
+    margin: 2px 0 4px;
+    text-align: left;
+  }
+
+  h2 {
+    font-size: 22px;
+    text-align: left;
+  }
+
+  h3 {
+    font-size: 18px;
+  }
+
+  .hero-content {
+    width: 100%;
+    padding-top: 30px;
+    gap: 16px;
+  }
+
+  .hero-panel {
+    width: 100%;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 14px;
+  }
+
+  .info-item {
+    width: 200px;
+  }
+
+  .airline-logos {
+    flex-wrap: wrap;
+    gap: 14px;
+    justify-content: center;
+  }
+
+  .routes-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .header-content {
+    flex-direction: column;
+  }
+
+  .hero-grid {
+    flex-direction: column;
+  }
+
+  .hero-panel {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .info-item {
+    height: 100px;
+  }
+
+  .contact-content {
+    grid-template-columns: 1fr;
+  }
+
+  .map,
+  .contact-details {
+    width: 100%;
+    height: auto;
+  }
+}
+
