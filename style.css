@@ -664,15 +664,6 @@ iframe {
   border-radius: var(--radius);
 }
 
-.contact-details {
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
-  width: 50%;
-  height: 300px;
-  justify-content: space-between;
-}
-
 /* ფუტერი */
 
 .site-footer {
