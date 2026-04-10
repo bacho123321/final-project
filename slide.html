@@ -1,0 +1,110 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Interactive Image Gallery</title>
+    <style> 
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+    
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background: #1a1a1a;
+            overflow: hidden;
+        }
+    
+        section {
+            display: flex;
+            gap: 2px;
+            height: 80vh;
+            width: 100%;
+            max-width: 1400px;
+        }
+    
+        .content {
+            width: 20vw;
+            height: 80vh;
+            overflow: hidden;
+            position: relative;
+            cursor: pointer;
+            flex-shrink: 0;
+            
+            /* გლუვი გადასვლა */
+            transition: width 0.6s cubic-bezier(0.4, 0.0, 0.2, 1),
+                        flex-grow 0.6s cubic-bezier(0.4, 0.0, 0.2, 1);
+            
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+        }
+
+        .content:hover {
+            width: 40vw;
+            flex-grow: 1;
+            box-shadow: 0 8px 30px rgba(0, 0, 0, 0.5);
+        }
+
+        /* სხვა ელემენტების შემცირება ჰოვერის დროს */
+        section:hover .content:not(:hover) {
+            width: 13vw;
+            opacity: 0.8;
+            filter: brightness(0.85);
+        }
+    
+        .content img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            display: block;
+            transition: transform 0.6s cubic-bezier(0.4, 0.0, 0.2, 1),
+                        filter 0.6s ease-out;
+        }
+
+        .content:hover img {
+            transform: scale(1.05);
+            filter: brightness(1.1);
+        }
+
+        /* რესპონსივი დიზაინი */
+        @media (max-width: 768px) {
+            .content {
+                width: 25vw;
+            }
+
+            .content:hover {
+                width: 50vw;
+            }
+
+            section:hover .content:not(:hover) {
+                width: 12.5vw;
+            }
+        }
+    </style>
+  </head>
+  <body>
+    <section>
+      <div class="content">
+        <img src="./images/viktor-stefanoski-JILQ8a7rnQ4-unsplash.jpg" alt="მოჩვენება 1" />
+      </div>
+
+      <div class="content">
+        <img src="./images/candace-smith-wOHxl-QpcCs-unsplash.jpg" alt="მოჩვენება 2" />
+      </div>
+
+      <div class="content">
+        <img src="./images/geio-tischler-7hww7t6NLcg-unsplash.jpg" alt="მოჩვენება 3" />
+      </div>
+
+      <div class="content">
+        <img src="./images/katarzyna-zygnerska-Y0UUhY1V7Po-unsplash.jpg" alt="მოჩვენება 4" />
+      </div>
+    </section>
+  </body>
+</html>
